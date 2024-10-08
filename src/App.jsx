@@ -35,7 +35,7 @@ const App = () => {
           ))}
         </div>
       ) : (
-        // When no search results, show the main routes
+        
         <Routes>
           
           <Route path="/" element={<PopularMovie />} />

@@ -5,7 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 
 const Navbar = ({ setSearchResults }) => {
   const [query, setQuery] = useState("");
-  const navigate = useNavigate(); // To programmatically navigate
+  const navigate = useNavigate();
 
   const handleSearch = async (e) => {
     e.preventDefault();
@@ -27,8 +27,8 @@ const Navbar = ({ setSearchResults }) => {
   };
 
   const handleNavigation = (path) => {
-    setSearchResults([]); // Clear search results before navigating
-    navigate(path); // Navigate to the route
+    setSearchResults([]); 
+    navigate(path); 
   };
 
   return (
