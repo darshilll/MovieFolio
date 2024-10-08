@@ -15,12 +15,13 @@ const App = () => {
       <Navbar setSearchResults={setSearchResults} />
 
       {searchResults.length > 0 ? (
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-12 gap-16 px-32">
+        
+        <div className="grid grid-cols-1 px-6 gap-4 lg:ml-0 w-full sm:grid-cols-2 md:grid-cols-3 md:ml-4 lg:grid-cols-4 lg:gap-16 lg:px-32">
           {searchResults.map((movie) => (
             <div key={movie.id} className="text-white text-center">
               <div
                 onClick={() => (window.location.href = `/movie/${movie.id}`)}
-                className="cursor-pointer"
+                className="cursor-pointer mt-5"
               >
                 <img
                   src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
